@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lcars-black: #0a0a0c;
+  --lcars-panel: #12121a;
+  --lcars-orange: #ff9900;
+  --lcars-peach: #ffcc99;
+  --lcars-purple: #cc99ff;
+  --lcars-blue: #9999ff;
+  --lcars-red: #cc6666;
+  --lcars-tan: #ffcc66;
+  --lcars-text: #e8e8f0;
+  --lcars-dim: #8888aa;
+}
+
+html, body {
+  background: var(--lcars-black);
+  color: var(--lcars-text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  min-height: 100%;
+}
+
+.rocket-word {
+  letter-spacing: 0.04em;
+  transition: opacity 0.04s linear;
+}
+.lcars-scan {
+  background-image: linear-gradient(
+    rgba(255, 153, 0, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 100% 4px;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0c; }
+::-webkit-scrollbar-thumb { background: #ff9900; border-radius: 4px; }
